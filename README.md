@@ -5,13 +5,13 @@ application.
 
 ## Status
 
-[<img src="https://secure.travis-ci.org/alno/irwi.png?branch=master" alt="Build Status" />](http://travis-ci.org/alno/irwi)
+[<img src="https://secure.travis-ci.org/bdiallo/irwi.png?branch=master" alt="Build Status" />](http://travis-ci.org/bdiallo/irwi)
 
 ## Installation
 
 Add to your Gemfile:
 
-    gem 'irwi', :git => 'git://github.com/alno/irwi.git'
+    gem 'irwi', :git => 'git://github.com/bdiallo/irwi.git'
 
 Then in your application directory call:
 

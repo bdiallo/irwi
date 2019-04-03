@@ -86,7 +86,7 @@ module Irwi::Extensions::Controllers::WikiPages
   private
 
   def load_paginated_versions(old_num, new_num)
-    versions = @page.versions.between(old_num, new_num) # Loading all versions between first and last
+    versions = @page.versions.irwi_between(old_num, new_num) # Loading all versions between first and last
 
     paginated_versions = Irwi.config.paginator.paginate(versions, page: params[:page]) # Paginating them
 

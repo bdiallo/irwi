@@ -21,7 +21,9 @@ module Irwi::Extensions::Models::WikiPageVersion
 
     before_update :raise_on_update
 
-    scope :between, lambda { |first, last|
+    # Avoid calling scope between to prevent getting error: You tried to define a scope named "between"
+    # on the model "WikiPageVersion", but ActiveRecord already defined a class method with the same name.
+    scope :irwi_between, lambda { |first, last|
       first = first.to_i
       last = last.to_i
       first, last = last, first if last < first # Reordering if neeeded
